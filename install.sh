@@ -1,3 +1,4 @@
+#!/bin/bash
 ## Install Nginx
 ./install_scripts/install_nginx.sh
 
