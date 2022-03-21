@@ -15,7 +15,7 @@
 ./install_scripts/install_ketrisvs.sh unified
 
 ## Install DarkYears
-./install_scripts/install_darkyears.sh unified
+##./install_scripts/install_darkyears.sh unified
 
 ## Install Oinker
 ./install_scripts/install_oinker.sh unified

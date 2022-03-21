@@ -1,3 +1,2 @@
-mkdir Flashcards
-git clone https://github.com/ApothecaryOfLight/Flashcards.git
+git clone https://github.com/ApothecaryOfLight/Flashcards.git ../Flashcards
 ../Flashcards/install.sh "$1"
