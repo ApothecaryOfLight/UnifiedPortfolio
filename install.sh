@@ -1,4 +1,7 @@
 #!/bin/bash
+## Update package manager and download appropraite system packages.
+sudo apt update && sudo apt upgrade
+
 ## Install Nginx
 ./install_scripts/install_nginx.sh
 
@@ -9,7 +12,7 @@
 ./install_scripts/install_nodejs.sh
 
 ## Install Cineflix
-##./install_scripts/install_cineflix.sh unified
+./install_scripts/install_cineflix.sh unified
 
 ## Install KetrisVS
 ./install_scripts/install_ketrisvs.sh unified
