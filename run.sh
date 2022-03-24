@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 ##Run projects.
 ##  Command line argument:
 ##    run.sh dev
