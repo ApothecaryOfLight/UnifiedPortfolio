@@ -10,7 +10,7 @@ if [[ "$1" = "dev" ]];
 then
   echo "Running projects in development mode."
   ip=$(curl https://api.ipify.org?format=text)
-  ##/Cineflix/run.sh http $ip
+  ./Cineflix/run.sh http $ip
   ./Flashcards/run.sh http $ip
   ./Oinker/run.sh http $ip
   ./Portfolio/run.sh http $ip
@@ -18,7 +18,7 @@ then
 elif [[ "$1" = "prod" ]];
 then
   echo "Running projects in production mode."
-  ##/Cineflix/run.sh https
+  ./Cineflix/run.sh https
   ./Flashcards/run.sh https
   ./Oinker/run.sh https
   ./Portfolio/run.sh https
