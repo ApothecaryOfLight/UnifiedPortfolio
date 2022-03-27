@@ -5,3 +5,4 @@ screen -X -S ketris_chat kill
 screen -X -S ketris_content kill
 screen -X -S Flashcards kill
 screen -X -S Cineflix kill
+screen -X -S Oinker kill
