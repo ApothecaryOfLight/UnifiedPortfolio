@@ -1,0 +1,30 @@
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
+        root /home/ubuntu/UnifiedPortfolio/Portfolio/frontend;
+
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name _;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+        location /cineflix {
+                alias /home/ubuntu/UnifiedPortfolio/Cineflix/frontend;
+                try_files $uri $uri/ =404;
+        }
+        location /triviacards {
+                alias /home/ubuntu/UnifiedPortfolio/Flashcards/frontend;
+                try_files $uri $uri/ =404;
+        }
+        location /ketris {
+                alias /home/ubuntu/UnifiedPortfolio/KetrisVS/frontend/content;
+                try_files $uri $uri/ =404;
+        }
+        location /oinker {
+                alias /home/ubuntu/UnifiedPortfolio/Oinker/frontend;
+                try_files $uri $uri/ =404;
+        }
+}
