@@ -20,7 +20,7 @@ server {
                 try_files $uri $uri/ =404;
         }
         location /ketris {
-                alias /home/ubuntu/UnifiedPortfolio/KetrisVS/frontend/content;
+                alias /home/ubuntu/UnifiedPortfolio/KetrisVS/frontend;
                 try_files $uri $uri/ =404;
         }
         location /oinker {
