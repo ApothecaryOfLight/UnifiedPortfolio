@@ -1,3 +1,8 @@
+map $http_user_agent $ketris_ua {
+        default "frontend";
+        "~*mobi" "frontend/mobile";
+}
+
 server {
         listen 80 default_server;
         listen [::]:80 default_server;
@@ -20,7 +25,7 @@ server {
                 try_files $uri $uri/ =404;
         }
         location /ketris {
-                alias /home/ubuntu/UnifiedPortfolio/KetrisVS/frontend;
+                alias /home/ubuntu/UnifiedPortfolio/KetrisVS/$ketris_ua;
                 try_files $uri $uri/ =404;
         }
         location /oinker {
