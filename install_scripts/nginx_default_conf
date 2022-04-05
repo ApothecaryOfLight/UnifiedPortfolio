@@ -32,6 +32,10 @@ server {
                 alias /home/ubuntu/UnifiedPortfolio/KetrisVS/frontend/media;
                 try_files $uri $uri/ =404;
         }
+        location /ketris/ketris-javascript {
+                alias /home/ubuntu/UnifiedPortfolio/KetrisVS/frontend/ketris-javascript;
+                try_files $uri $uri/ =404;
+        }
         location /oinker {
                 alias /home/ubuntu/UnifiedPortfolio/Oinker/frontend;
                 try_files $uri $uri/ =404;
