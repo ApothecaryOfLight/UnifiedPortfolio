@@ -7,3 +7,7 @@
 8080    Ketris Content
 8081    Ketris Content HTTPS
 8989	mySQL Port
+
+53002   Ketris Chat
+53003   Ketris Game
+53004   Ketris Admin
